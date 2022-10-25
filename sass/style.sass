@@ -1,3 +1,5 @@
+$color-back: #F7F7F7
+
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -15,7 +17,7 @@ body
     background-color: white
 
 .container
-    background-color: #F7F7F7
+    background-color: $color-back
 
 .header
     position: relative
@@ -28,6 +30,9 @@ body
         position: absolute
         top: 5rem
         left: 5rem
+        &_animated
+        animation: LeftToRight 5s ease 1s
+        animation-fill-mode: backwards
     &__box
         position: absolute
         top: 40%
@@ -48,7 +53,7 @@ body
         margin-bottom: 1rem
         animation-name: LeftToRight
         animation-duration: 5s
-        nimation-timing-function: ease
+        animation-timing-function: ease
     &__secondary
         font-weight: 100
         font-size: 4rem
@@ -74,14 +79,13 @@ body
         font-size: 2rem
      
     &:hover
-        transform: translateY(-4px)
+        transform: translateY(-.4rem)
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3)
-        
-    &:active
-        transform: translateY(-2px)
         &::after
             opacity: 0
             transform: scaleX(1.5) scaleY(1.7)
+    &:active
+        transform: translateY(-.2rem)
     &::after
         content: ""
         background: white
@@ -93,7 +97,7 @@ body
         top: 0
         left: 0
         z-index: -1
-        transition: all 0.4s
+        transition: all 0.9s
     &_animated
         animation: BtnToUp 2s ease 3s
         animation-fill-mode: backwards
