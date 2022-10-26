@@ -1,0 +1,34 @@
+.row
+    max-width: $grid-width
+    background: #999999
+    margin: 0 auto
+    &:not(:last-child)
+        margin-bottom: $margin-ver-big
+    @include clearfix
+
+[class^="col-"]
+    background: yellow
+    &:not(:last-child)
+         margin-right: $margin-hor
+    float: left
+
+
+
+
+.col-1of-2
+    width: calc((100% - #{$margin-hor}) / 2)
+
+.col-1of-3
+    width: calc((100% - 2 * #{$margin-hor}) / 3)
+
+.col-2of-3
+    width: calc(2 * ((100% - 2 * #{$margin-hor}) / 3) + #{$margin-hor})
+
+.col-1of-4
+    width: calc((100% - 3 * #{$margin-hor}) / 4)
+
+.col-2of-4
+    width: calc(((100% - 3 * #{$margin-hor}) / 2) + #{$margin-hor})
+
+.col-3of-4
+    width: calc((((100% - 3 * #{$margin-hor}) / 4) * 3) + 2 * #{$margin-hor})
