@@ -1,0 +1,44 @@
+.feedback-card
+    width: 90%
+    background: rgba(white, 0.75)
+    box-shadow: $box-shadow
+    margin: 0 auto
+    padding: 6rem 5rem
+    transform: skewX(-17deg)
+    & > *
+        transform: skewX(17deg)
+    &__img
+        width: 17rem
+        height: 17rem
+        background: green
+        float: left
+        border-radius: 100rem
+        shape-outside: circle(50% at 50% 50%)
+        -webkit-shape-outside: circle(50% at 50% 50%)
+        margin-right: 4rem
+        overflow: hidden
+        position: relative
+        img
+            height: 100%
+            transform: scale(1.2)
+            transition: all .5s
+    &__box
+    &__name
+        font-weight: 400
+        letter-spacing: .2rem
+        color: white
+        font-size: 2.4rem
+        text-align: center
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -10%)
+        opacity: 0
+        transition: all .5s
+    &:hover &__name
+        transform: translate(-50%, -50%)
+        opacity: 1
+    &:hover img
+        transform: scale(1)
+        filter: blur(.3rem) brightness(70%)
+
