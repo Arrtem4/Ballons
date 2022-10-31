@@ -457,6 +457,18 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%);
 }
 
+.book {
+  height: 50rem;
+  background: linear-gradient(115deg, rgba(225, 225, 225, 0.9) 0%, rgba(225, 225, 225, 0.9) 57%, rgba(186, 133, 80, 0.8) 57%, rgba(161, 79, 3, 0.8) 100%), url(../img/form.jpg) center/cover no-repeat;
+  box-shadow: 0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.book__form {
+  width: 60%;
+  padding-top: 5rem;
+}
+
 .header {
   position: relative;
   height: 70vh;
@@ -533,6 +545,11 @@ body {
 .section-feedback {
   position: relative;
   padding: 5rem 0rem 5rem 0rem;
+}
+
+.section-book {
+  padding: 10rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(129, 63, 3, 0.8));
 }
 
 .row {
