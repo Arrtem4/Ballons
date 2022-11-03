@@ -1,12 +1,12 @@
 .navigation
     &__icon
         position: relative
-        margin-top: 30px
+        margin-top: 3rem
         &,
         &::before,
         &::after
-            width: 34px
-            height: 2px
+            width: 3.4rem
+            height: .2rem
             background: black
             display: inline-block
         &::before,
@@ -16,9 +16,9 @@
             left: 0
             transition: all .2s ease
         &::before
-            top: -10px
+            top: -1rem
         &::after
-            top: 10px
+            top: 1rem
         &_animated
         animation: RightToLeft 2s ease 0.5s
         animation-fill-mode: backwards
@@ -56,11 +56,10 @@
         width: 100%
         position: fixed
         top: 0
-        right: 0
+        right: -100%
         z-index: 22
-        opacity: 0
-        width: 0%
         transition: all .7s cubic-bezier(0.68, -0.6, 0.32, 1.6)
+        overflow: hidden
     &__list
         position: absolute
         top: 50%
@@ -91,13 +90,13 @@
     &__toggle:checked ~ &__background
         transform: scale(95)
     &__toggle:checked ~ &__nav
-        opacity: 1
-        width: 100%
+        top: 0
+        right: 0
 
     &__button:hover &__icon::before
-        top: -13px
+        top: -1.3rem
     &__button:hover &__icon::after
-        top: 13px
+        top: 1.3rem
 
     &__toggle:checked + &__button &__icon
         background: transparent

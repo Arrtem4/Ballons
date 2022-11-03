@@ -3,6 +3,9 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
+    @include respond(m)
+            width: 40rem
+            margin: 3rem auto
     &__side
         height: 52rem
         transition: all 1s ease
@@ -15,6 +18,7 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
+       
         &_front
             background: white
         &_back
@@ -61,6 +65,8 @@
                 color: $color-text
                 letter-spacing: .2rem
                 border-bottom: 1px solid $color-text
+                @include respond(l)
+                    font-size: 1.4rem
 
                 &:not(:last-child)
                     margin-bottom: 2rem

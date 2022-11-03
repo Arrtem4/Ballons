@@ -29,6 +29,15 @@
     100%
         height: 70vh
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%)
+    
+@include respond(m)
+    @keyframes clip-patch-header
+        0%
+            height: 100vh
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+        100%
+            height: 60vh
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%)
 
 @keyframes clip-patch-triangle-1
     0%

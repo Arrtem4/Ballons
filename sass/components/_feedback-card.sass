@@ -5,8 +5,20 @@
     margin: 0 auto
     padding: 6rem 5rem
     transform: skewX(-17deg)
+    @include respond(l)
+        width: 85%
+        transform: skewX(-10deg)
+        padding: 5rem 4rem
+    @include respond(m)
+        transform: skewX(-5deg)
+        padding: 3rem 3rem
     & > *
         transform: skewX(17deg)
+        @include respond(l)
+            transform: skewX(10deg)
+        @include respond(m)
+            transform: skewX(5deg)
+    
     &__img
         width: 17rem
         height: 17rem

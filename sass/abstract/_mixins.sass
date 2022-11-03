@@ -5,3 +5,21 @@
         clear: both
 
 
+
+@mixin respond($breakpoint)
+    @if $breakpoint == s
+        @media (max-width: 600px)
+            @content
+    @if $breakpoint == m
+        @media (max-width: 910px)
+            @content
+    @if $breakpoint == l
+        @media (max-width: 1200px)
+            @content
+    @if $breakpoint == xl
+        @media (min-width: 1700px)
+            @content
+
+
+
+

@@ -6,6 +6,8 @@
     animation: clip-patch-header 2s ease 3s
     animation-fill-mode: backwards
     overflow: hidden
+    @include respond(m)
+        height: 60vh
     &__logo
         height: 6rem
         width: 4.6rem
@@ -17,11 +19,14 @@
         animation-fill-mode: backwards
     &__box
         position: absolute
-        top: 40%
+        top: 50%
         left: 50%
         transform: translate(-50%, -50%)
         width: 100%
         text-align: center
+        @include respond(m)
+            top: 55%
+
 
 
 .triangle 
@@ -34,6 +39,8 @@
     left: 0vw
     animation: clip-patch-triangle-1 2s ease 3s
     animation-fill-mode: backwards
+    @include respond(m)
+        display: none
     
 
 .triangle-2
@@ -46,5 +53,7 @@
     position: absolute
     animation: clip-patch-triangle-2 2s ease 3s
     animation-fill-mode: backwards
+    @include respond(m)
+        display: none
     
     

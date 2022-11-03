@@ -8,19 +8,37 @@
         position: absolute
         transition: all .2s
         outline-offset: 1rem
+        @include respond(l)
+            width: 65%
+        @include respond(m)
+            width: 50%
         &_n1
             top: 0rem
             left: 0rem
         &_n2
             top: 6rem
             right: 0rem
+            @include respond(l)
+                top: 32%
+                left: 18%
+            @include respond(m)
+                top: 28%
+                left: 28%
         &_n3
             top: 15rem
             left: 10rem
+            @include respond(l)
+                top: 65%
+                left: 35%
+            @include respond(m)
+                top: 55%
+                left: 50%
         &:hover
             outline: .3rem solid $color-brown-light
             transform: scale(1.3)
             z-index: 10
+            @include respond(l)
+                transform: scale(1)
     &:hover &__photo:not(:hover)
         transform: scale(0.9)
 
