@@ -1,0 +1,70 @@
+@keyframes LeftToRight
+    0%
+        opacity: 0
+        transform: translateX(-30rem)
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+
+@keyframes RightToLeft
+    0%
+        opacity: 0
+        transform: translateX(30rem)
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+
+@keyframes BtnToUp
+    0%
+        opacity: 0
+        transform: translateY(10rem)
+    100%
+        opacity: 1
+        transform: translateY(0rem)
+
+@keyframes clip-patch-header
+    0%
+        height: 100vh
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+    100%
+        height: 70vh
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%)
+    
+@include respond(l)
+    @keyframes clip-patch-header
+        0%
+            height: 100vh
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+        100%
+            height: 60rem
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+
+@include respond(s)
+    @keyframes clip-patch-header
+        0%
+            height: 100vh
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+        100%
+            height: 50rem
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+
+@keyframes clip-patch-triangle-1
+    0%
+        opacity: 0
+        transform: translateX(-30rem)
+        
+        
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+        
+
+@keyframes clip-patch-triangle-2
+    0%
+        opacity: 0
+        transform: translateX(30rem)
+        
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+        

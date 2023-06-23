@@ -1,0 +1,38 @@
+.section-about
+    position: relative
+    padding-top: 4rem
+    padding-left: 2rem
+    padding-right: 2rem
+    @include respond(m)
+        margin-bottom: 7rem
+    @include respond(s)
+        margin-bottom: 3rem
+    
+
+.section-adventure
+    padding: 17rem 0rem
+    background: linear-gradient(90.05deg, rgba($color-brown-light, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/back2.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
+    @include respond(m)
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+    @include respond(s)
+        padding: 13rem 0rem
+    &__wrapper
+        padding: 0rem 3rem
+
+.section-tour
+    text-align: center
+    padding: 4rem 2rem 0rem 2rem
+    margin-bottom: 5rem
+
+.section-feedback
+    position: relative
+    padding: 5rem 0rem 5rem 0rem
+
+.section-book
+    padding: 10rem
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7), rgba($color-brown, 0.8))
+    @include respond(s)
+        padding: 3rem
+
+    

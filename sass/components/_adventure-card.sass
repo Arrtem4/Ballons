@@ -1,0 +1,20 @@
+.adventure-card
+    min-width: 22rem
+    padding: 2.5rem
+    background-color: rgba(225,225,225,.8)
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    text-align: center
+    transition: all .3s
+    @include respond(m)
+        max-width: 80%
+        margin: 2rem auto
+    &:hover
+        transform: scale(1.1)
+    &__icon
+        font-size: 6rem
+        background: linear-gradient(90.05deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown, 0.7) 99.94%)
+        background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+        display: inline-block
